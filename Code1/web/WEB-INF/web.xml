@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+
+    <!--servlet的类的配置-->
+<servlet>
+    <servlet-name>abc</servlet-name>
+    <!-- servlet class 中写你放在src文件夹线面的类的路径~！！-->
+    <servlet-class>com.hnist.servelet.FirstServelet</servlet-class>
+
+</servlet>
+    <!--- servlet的虚拟路径配置-->
+    <servlet-mapping>
+        <servlet-name>abc</servlet-name>
+      <!--完全匹配-->
+        <url-pattern>/firstServelet</url-pattern>
+
+        <!--目录匹配  格式： aa/bb/cc/*-->
+        <!--<url-pattern>/aaa/bbb/ccc/*</url-pattern>-->
+
+    <!--扩展名匹配-->
+        <!--<url-pat tern>*.bbba</url-pattern>-->
+
+    </servlet-mapping>
+    <!--//欢迎页面排序-->
+<welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+</welcome-file-list>
+
+</web-app>
