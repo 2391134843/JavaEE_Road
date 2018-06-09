@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码登录测试页面</title>
+    <script type="text/javascript">
+        window.onload = function (ev) {
+        }
+        function changeImg(obj) {
+            // 利用参数，实现点击更换验证码功能参数不能一样，所以利用取当前时间的方式。
+            obj.src = "/Checking?time=" + new Date().getTime();
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="post">
+        用户名：<input type="text" name="username"><br/>
+        密码：<input type="password",name="password"><br>
+        验证码: <input type="text" name="username">
+        <!--<img onclick="changeImg(this)" src="/Checking">-->
+        <img id="image" src="/Checking">
+        <a href="#" onclick="changeImg(image)">看不清,换一张</a>
+        <br/>
+        <input type="submit" value="登录" ><br>
+
+    </form>
+</body>
+</html>
