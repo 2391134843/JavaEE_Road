@@ -42,9 +42,9 @@ public class LoginServlet extends HttpServlet {
 
     public Student login(String username,String password) throws SQLException {
         QueryRunner queryRunner = new QueryRunner(DataSourceUtils.getDataSource());
-        String sql = "SELECT *FROM students where password=?";// username=? OR
+        String sql = "SELECT *FROM students where username=? AND password=?";
 
-        Student student = queryRunner.query(sql, new BeanHandler<Student>(Student.class)//,username
+        Student student = queryRunner.query(sql, new BeanHandler<Student>(Student.class),username
                     , password);
         return student;
     }
