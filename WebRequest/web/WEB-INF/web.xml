@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+           version="3.1">
+
+    <servlet>
+        <servlet-name>LineServlet</servlet-name>
+        <servlet-class>lineServlet.LineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LineServlet</servlet-name>
+        <url-pattern>/line</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>HeaderServlet</servlet-name>
+        <servlet-class>headerServlet.HeaderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HeaderServlet</servlet-name>
+        <url-pattern>/header</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletContent</servlet-name>
+        <servlet-class>contentServer.ContentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletContent</servlet-name>
+        <url-pattern>/content</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Servlet1</servlet-name>
+        <servlet-class>Fooowrd.Servlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Servlet2</servlet-name>
+        <servlet-class>Fooowrd.Servlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+
+</web-app>
