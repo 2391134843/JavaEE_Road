@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+           version="3.1">
+<servlet>
+    <servlet-name>AdminProductList</servlet-name>
+    <servlet-class>web.AdminProductListServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>AdminProductList</servlet-name>
+        <url-pattern>/adminProductList</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminProductListUI</servlet-name>
+        <servlet-class>web.AdminAddProductUI</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminProductListUI</servlet-name>
+        <url-pattern>/adminProductListUI</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminAddProductServlet</servlet-name>
+        <servlet-class>web.AdminAddProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminAddProductServlet</servlet-name>
+        <url-pattern>/adminAddProductServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminDelProductServlet</servlet-name>
+        <servlet-class>web.AdminDelProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminDelProductServlet</servlet-name>
+        <url-pattern>/adminDelProduct</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminUpdateProductServlet</servlet-name>
+        <servlet-class>web.AdminUpdateProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminUpdateProductServlet</servlet-name>
+        <url-pattern>/adminUpdateProductUI</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <servlet-class>web.UpdateProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <url-pattern>/adminUpdateProductServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

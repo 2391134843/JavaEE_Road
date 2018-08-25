@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="commons-beanutils-1.8.3">
+    <CLASSES>
+      <root url="jar://E:/github_Java/Java-EE-Tool-Kit/jdbc-dbutils/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://E:/github_Java/Java-EE-Tool-Kit/jdbc-dbutils/commons-logging-1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

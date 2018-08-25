@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="c3p0-0.9.1.2">
+    <CLASSES>
+      <root url="jar://E:/JAVA全栈。/WEB20_增删改查/WEB20_增删改查/WEB20_增删改查/资料/相应jar包/c3p0-0.9.1.2.jar!/" />
+      <root url="jar://E:/JAVA全栈。/WEB20_增删改查/WEB20_增删改查/WEB20_增删改查/资料/相应jar包/commons-dbutils-1.4.jar!/" />
+      <root url="jar://E:/JAVA全栈。/WEB20_增删改查/WEB20_增删改查/WEB20_增删改查/资料/相应jar包/jstl.jar!/" />
+      <root url="jar://E:/JAVA全栈。/WEB20_增删改查/WEB20_增删改查/WEB20_增删改查/资料/相应jar包/mysql-connector-java-5.0.4-bin.jar!/" />
+      <root url="jar://E:/JAVA全栈。/WEB20_增删改查/WEB20_增删改查/WEB20_增删改查/资料/相应jar包/standard.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
